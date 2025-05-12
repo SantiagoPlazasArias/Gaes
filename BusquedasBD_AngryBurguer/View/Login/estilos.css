@@ -1,0 +1,165 @@
+/*https://e1.pxfuel.com/desktop-wallpaper/762/464/desktop-wallpaper-burger.jpg*/
+html {
+  background: url(https://images.pexels.com/photos/2983101/pexels-photo-2983101.jpeg?cs=srgb&dl=pexels-jonathanborba-2983101.jpg&fm=jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+* {
+  margin: 0%;
+}
+.nav_bar {
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+  position: fixed;
+  display: flex;
+  justify-content: flex-end;
+  color: white;
+}
+.angry {
+  margin: 1.5% 2% 0;
+}
+h3 {
+  margin: 2%;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: transparent;
+}
+
+.login {
+
+  width: 25%;
+  height: 30vh;
+  background-color: wheat;
+  position: relative;
+  text-align: center;
+  top: 25%;
+  left: 5%;
+  display: flex;
+  justify-content: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  border-radius: 32px;
+  
+}
+.gmail {
+  width: 21%;
+  height: 20vh;
+  background-color: transparent;
+  position: relative;
+  left: 7%;
+}
+a {
+  text-decoration: none; /*para quitar la barra de abajo del link*/
+  color: white;
+}
+input {
+  padding: 2%;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  margin-left: 10%;
+  border-radius: 10px;
+  size: 100%;
+  width: 80%;
+}
+.inp1 {
+  margin-top: 15%;
+}
+h4 {
+  margin: 8%;
+}
+
+button {
+  width: 80%;
+  margin-top: 10%;
+}
+.boton {
+  background-color: red;
+  color: white;
+}
+#content_one {
+
+  background-color: rgba(29, 33, 46);
+  width: 25%;
+  height: 250px;
+  display: flex; /*Para que el div se vuelva flexible y se puedan poner algunos comandos como le justify-content*/
+  justify-content: center; /*estamos centrando el contenido del div o elemento*/
+  color: white; /*Esta cambiando todo lo que hay dentro del contenedor a color blanco*/
+  
+}
+ul li {
+  margin: 10px; /*Esto hace que todos los li que estan dentro de ul se separen 10px*/
+  list-style: none; /*esta quitando en general el estilo de todas las listas*/
+  font-size: 14px;
+}
+#content_2 {
+  background-color: rgba(29, 33, 46);
+  float: right;
+  width: 25%;
+  height: 250px;
+  display: flex; /*Para que el div se vuelva flexible y se puedan poner algunos comandos como le justify-content*/
+  justify-content: center; /*estamos centrando el contenido del div o elemento*/
+  color: white;
+}
+#content_3 {
+  background-color: rgba(29, 33, 46);
+  float: right;
+  width: 25%;
+  height: 250px;
+  display: flex; /*Para que el div se vuelva flexible y se puedan poner algunos comandos como le justify-content*/
+  justify-content: center; /*estamos centrando el contenido del div o elemento*/
+  color: white;
+}
+#content_4 {
+  background-color: rgba(29, 33, 46);
+  float: right;
+  width: 25%;
+  height: 250px;
+  display: flex; /*Para que el div se vuelva flexible y se puedan poner algunos comandos como le justify-content*/
+  justify-content: center; /*estamos centrando el contenido del div o elemento*/
+  color: white;
+}
+a {
+  color: white;
+}
+
+#sinpunto {
+  list-style: none;
+  margin: 25px;
+}
+select {
+  background-color: transparent;
+  color: white;
+  width: 150px; /*Ancho del menu desplegable*/
+}
+#letra {
+  margin-left: 26px;
+}
+#horizontal {
+  background-color: rgba(29, 33, 46);
+  width: 100%;
+  height: 55px;
+  display: flex;
+  justify-content: center; /*esta centrando todo el contenido del contenedor*/
+  color: white;
+}
+#pie {
+  float: right;
+  list-style: none;
+}
+
+#content_6 {
+  background-color: rgba(29, 33, 46);
+  width: 100%;
+  height: 95px;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+#imgs {
+  list-style: none;
+  float: right;
+}
