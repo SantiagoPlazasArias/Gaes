@@ -1,0 +1,173 @@
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f7f7f7;
+    }
+    .nav {
+        display: flex;
+        justify-content: flex-end;
+        background-color: #333;
+        padding: 10px 20px;
+    }
+    .nav a {
+        margin-left: 20px;
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        padding: 8px 12px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    .nav a:hover {
+        background-color: #555;
+    }
+    .nav a.chat-link {
+        background-color: #25D366;
+        color: white;
+    }
+    .nav a.chat-link:hover {
+        background-color: #20b858;
+    }
+    .nombre {
+        font-size: 50px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 30px;
+        color: #333;
+    }
+    .navegador {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+        margin: 20px 0;
+        background-color: #fff;
+        border-radius: 30px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .navegador li {
+        margin: 0;
+        position: relative;
+    }
+    .nav-item a {
+        display: inline-block;
+        text-decoration: none;
+        color: #333;
+        padding: 15px 30px;
+        font-size: 18px;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-radius: 30px;
+        transition: background-color 0.3s ease;
+    }
+    .nav-item a:hover {
+        background-color: #f0f0f0;
+    }
+
+    /* Submenú estilo */
+    .sub-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fff;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 200px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        display: none; /* Inicialmente oculto */
+    }
+    .sub-menu li a {
+        padding: 12px;
+        display: block;
+        text-decoration: none;
+        color: #333;
+        font-weight: normal;
+        transition: background-color 0.3s ease;
+    }
+    .sub-menu li a:hover {
+        background-color: #f0f0f0;
+    }
+
+    .nav-item:hover .sub-menu {
+        display: block; /* Muestra el submenú cuando se pasa el ratón */
+    }
+
+    #content-display {
+        margin-top: 40px;
+        padding: 30px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background-color: #fff;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+        margin-top: 20px;
+    }
+    .product {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        text-align: center;
+        transition: transform 0.3s ease;
+    }
+    .product:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    }
+    .product img {
+        width: 150px; /* Ajusta a tus necesidades */
+        height: 150px;
+        border-radius: 10px;
+        max-width: 150px;
+        height: auto;
+        margin-bottom: 15px;
+    }
+    img{
+        width: 15px; /* Ajusta a tus necesidades */
+        height: 15px;
+    }
+    .product h4 {
+        font-size: 18px;
+        color: #333;
+        margin-bottom: 5px;
+    }
+    .product p {
+        font-size: 16px;
+        color: #888;
+        margin: 0;
+    }
+    .btn-mas-info {
+        background-color: #333; /* Color de fondo (ajusta según tu paleta de colores) */
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-top:10px;
+    }
+    a{
+        text-decoration: none;
+        color: white;
+    }
+    @media (max-width: 768px) {
+        .nav a {
+            font-size: 14px;
+            padding: 5px 10px;
+        }
+        .product-grid {
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        }
+        .nombre {
+            font-size: 40px;
+        }
+    }

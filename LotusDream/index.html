@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interacciones con elementos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav">
+        <a href="conocenos.html">Conócenos</a>
+        <a href="https://wa.me/573222937248?text=Hola,%20estoy%20interesado%20en%20sus%20servicios." 
+           class="chat-link" 
+           target="_blank">
+           Contacto Whatsapp
+        </a>
+    </div>
+    
+    <div class="nombre">
+        Lotus Dream Spa
+    </div>
+
+    <ul class="navegador">
+        <li class="nav-item">
+            <a class="navlink" href="#servicios" data-content="Servicios">Servicios</a>
+            <ul class="sub-menu">
+                <li><a href="#manicura" class="sub-navlink" data-content="Manicura">Manicura</a></li>
+                <li><a href="#pedicura" class="sub-navlink" data-content="Pedicura">Pedicura</a></li>
+                <li><a href="#depilacioncorporalconcera" class="sub-navlink" data-content="Depilacioncorporalconcera">Depilacion corporal con cera</a></li>
+                <li><a href="#faciales" class="sub-navlink" data-content="Faciales">Faciales</a></li>
+                <li><a href="#pestañas" class="sub-navlink" data-content="Pestañas">Pestañas</a></li>
+                <li><a href="#masajescorporales" class="sub-navlink" data-content="MasajesCorporales">Masajes corporales</a></li>
+            </ul>
+        </li>
+        
+        <li class="nav-item">
+            <a class="navlink" href="#productos" data-content="Productos">Productos</a>
+            <ul class="sub-menu">
+                <li><a href="#mantequillas" class="sub-navlink" data-content="Mantequillas">Mantequillas</a></li>
+                <li><a href="#velas" class="sub-navlink" data-content="Velas">Velas</a></li>
+                <li><a href="#velascorporales" class="sub-navlink" data-content="VelasCorporales">Velas Corporales</a></li>
+                <li><a href="#tratamientosCapilares" class="sub-navlink" data-content="TratamientosCapilares">Tratamientos Capilares</a></li>
+                <li><a href="#shampoo" class="sub-navlink" data-content="Shampoo">Shampoo</a></li>
+                <li><a href="#coctel" class="sub-navlink" data-content="Coctel">Coctel</a></li>
+                <li><a href="#serum" class="sub-navlink" data-content="Serum">Serum</a></li>
+            </ul>
+        </li>
+        
+    </ul>
+
+    <!-- Sección para mostrar contenido dinámico -->
+    <div id="content-display">
+        Selecciona un elemento para ver su contenido aquí.
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
