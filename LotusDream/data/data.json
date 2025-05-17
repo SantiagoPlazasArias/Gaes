@@ -1,0 +1,111 @@
+ 
+{
+  "Servicios": [
+    {
+      "nombre": "Masajes Relajantes",
+      "precio": 100000,
+      "imagen": "img/MatizantesBukiPro250.jpg",
+      "descripcion": "Relájate profundamente y libera el estrés con nuestro masaje relajante. Ideal para complementar una jornada de spa y embellecimiento de uñas."
+    },
+    {
+      "nombre": "Masaje Descontracturante",
+      "precio": 100000,
+      "imagen": "https://via.placeholder.com/150",
+      "descripcion": "Alivia tensiones musculares acumuladas y mejora tu bienestar físico antes o después de tu tratamiento de uñas."
+    },
+    {
+      "nombre": "Drenaje Linfático",
+      "precio": 110000,
+      "imagen": "https://via.placeholder.com/150",
+      "descripcion": "Estimula la circulación y desintoxica tu cuerpo con una técnica suave y profesional. Perfecto para quienes buscan belleza y salud desde adentro."
+    },
+    {
+      "nombre": "Masaje Anticelulítico",
+      "precio": 100000,
+      "imagen": "https://via.placeholder.com/150",
+      "descripcion": "Define tu silueta y mejora el aspecto de tu piel. Combínalo con una sesión de spa de uñas para una transformación completa."
+    },
+    {
+      "nombre": "Masaje Reductor",
+      "precio": 120000,
+      "imagen": "https://via.placeholder.com/150",
+      "descripcion": "Moldea tu figura y siente una piel más firme. Un complemento ideal para un día de belleza total."
+    }
+  ],
+  "Productos": [
+    {
+      "nombre": "Mantequillas Hidratantes Artesanales - Sandia",
+      "precio": 40000,
+      "imagen": "img/MantequillasHidratantesArtesanalessandia.jpg",
+      "descripcion": "Una delicia tropical para tu piel. Hidrata y suaviza tus manos después de una manicura profesional."
+    },
+    {
+      "nombre": "Mantequillas Hidratantes Artesanales - Frutos Rojos",
+      "precio": 40000,
+      "imagen": "img/MantequillasHidratantesArtesanalesfrutosrojos.jpg",
+      "descripcion": "Textura rica y aroma seductor. Nutre tus manos y pies tras un spa de uñas completo."
+    },
+    {
+      "nombre": "Mantequillas Hidratantes Artesanales - Maracuya",
+      "precio": 40000,
+      "imagen": "img/MantequillasHidratantesArtesanalesmaracuya.jpg",
+      "descripcion": "Con el poder antioxidante de la maracuyá, esta mantequilla revitaliza tu piel dejándola fresca y radiante."
+    },
+    {
+      "nombre": "Matizantes Buki Pro",
+      "presentacion": "600 ML",
+      "precio": 156000,
+      "imagen": "img/MatizantesBukiPro.jpg",
+      "descripcion": "Neutraliza tonos no deseados y aporta brillo. Ideal para un look cuidado de la cabeza a los pies."
+    },
+    {
+      "nombre": "Tratamiento de Frutas Buki Pro",
+      "presentacion": "250 ML",
+      "precio": 79000,
+      "imagen": "img/TratamientodeFrutasBukiPro.jpg",
+      "descripcion": "Un cóctel nutritivo para tu cabello, mientras disfrutas de un momento de relajación y belleza en nuestro spa."
+    },
+    {
+      "nombre": "Matizantes Buki Pro",
+      "presentacion": "250 ML",
+      "precio": 79000,
+      "imagen": "img/MatizantesBukiPro250.jpg",
+      "descripcion": "Restaura la vitalidad de tu cabello con un tono impecable. Complemento perfecto a tu sesión de belleza integral."
+    },
+    {
+      "nombre": "Shampoo sin sal Buki Pro",
+      "presentacion": "300 ML",
+      "precio": 68000,
+      "imagen": "img/ShampoosinsalBukiPro300.jpg",
+      "descripcion": "Limpieza suave para cabellos tratados. Mantén tu melena radiante mientras disfrutas de un spa de uñas profesional."
+    },
+    {
+      "nombre": "Shampoo sin sal Buki Pro",
+      "presentacion": "1 L",
+      "precio": 139000,
+      "imagen": "img/ShampoosinsalBukiPro1.jpg",
+      "descripcion": "Ideal para el cuidado diario de un cabello hermoso. Porque tu rutina de belleza empieza desde la raíz."
+    },
+    {
+      "nombre": "Coctel de Aminoacidos Buki Pro",
+      "presentacion": "250 ML",
+      "precio": 79000,
+      "imagen": "img/CocteldeAminoacidosBukiPro250.jpg",
+      "descripcion": "Revitaliza tu cabello con aminoácidos esenciales mientras te consientes con un servicio de spa de lujo."
+    },
+    {
+      "nombre": "Coctel de Aminoacidos Buki Pro",
+      "presentacion": "600 ML",
+      "precio": 156000,
+      "imagen": "img/CocteldeAminoacidosBukiPro600.jpg",
+      "descripcion": "Recupera la fuerza y brillo natural de tu cabello. El complemento ideal a una jornada de belleza y relajación."
+    },
+    {
+      "nombre": "Serum Buki Pro",
+      "presentacion": "30 ML",
+      "precio": 65000,
+      "imagen": "img/serum.jpg",
+      "descripcion": "Un elixir concentrado que repara y protege. Dale el toque final a tu rutina de spa con este serum de lujo."
+    }
+  ]
+}
