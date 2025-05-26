@@ -1,0 +1,190 @@
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "calendario_completo";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+if ($conn->connect_error) {
+    die("Conexión fallida: " . $conn->connect_error);
+}
+
+$mensaje = "";
+$servicios = [];
+
+if (isset($_POST['mostrar_servicios'])) {
+    $sql = "SELECT * FROM servicios";
+    $result = $conn->query($sql);
+
+    if ($result && $result->num_rows > 0) {
+        while ($row = $result->fetch_assoc()) {
+            $servicios[] = $row;
+        }
+    } else {
+        $mensaje = "No hay servicios disponibles.";
+    }
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stilo.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            padding: 40px;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .form-container {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        input[type="submit"] {
+            padding: 12px 25px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .grid-servicios {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .servicio-card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            transition: transform 0.2s;
+        }
+
+        .servicio-card:hover {
+            transform: scale(1.02);
+        }
+
+        .servicio-nombre {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .servicio-precio {
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .mensaje {
+            color: red;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .imagen-placeholder {
+            width: 100%;
+            height: 150px;
+            background-color: #eee;
+            border-radius: 6px;
+            margin-bottom: 15px;
+        }
+        
+    </style>
+</head>
+
+<body>
+<header class="header">
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="logo.png" alt="Lotus Dream Spa" height="60">
+      </a>
+
+      <!-- Botón hamburguesa -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+        aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Menú de navegación -->
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="../php/servicios.php">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Regresa</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../php/productos.php">Promociones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="conocenos.html">Conócenos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="inicio_sesion.php">Inicia Sesion</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Bienvenido a Lotus Dream Spa</h1>
+      <p>Descubre una experiencia única de relajación y bienestar.</p>
+    </div>
+  </section>
+
+  <!-- botones de mostrar servicios y productos -->
+    <div class="container">
+      <div class="form-container">
+          <form method="post">
+              <input type="submit" name="mostrar_servicios" value="Mostrar Servicios">
+          </form>
+      </div>
+  
+      <?php if (!empty($servicios)): ?>
+          <div class="grid-servicios">
+              <?php foreach ($servicios as $servicio): ?>
+                  <div class="servicio-card">
+                      <div class="imagen-placeholder">
+                          <!-- Aquí luego irá una imagen -->
+                      </div>
+                      <div class="servicio-nombre"><?= htmlspecialchars($servicio['nombre_servicio']) ?></div>
+                      <div class="servicio-precio">Precio: $<?= number_format($servicio['valor'], 0, ',', '.') ?></div>
+                      <!-- Aquí luego puedes agregar botones como "Ver más" o "Seleccionar" -->
+                  </div>
+              <?php endforeach; ?>
+          </div>
+      <?php endif; ?>
+  
+      <?php if ($mensaje): ?>
+          <p class="mensaje"><?= $mensaje ?></p>
+      <?php endif; ?>
+  </div>
+
+</body>
+</html>
