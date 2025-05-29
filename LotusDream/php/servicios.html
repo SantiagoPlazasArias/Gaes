@@ -32,7 +32,6 @@ if (isset($_POST['mostrar_servicios'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="stilo.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -40,6 +39,34 @@ if (isset($_POST['mostrar_servicios'])) {
             padding: 40px;
             margin: 0;
         }
+header {
+  background-color: #f8f8f8;
+  padding: 20px 0;
+  border-bottom: 1px solid #eaeaea;
+}
+
+header .logo img {
+  height: 60px;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 30px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.main-nav a:hover {
+  color: #007BFF;
+}
 
         .container {
             max-width: 1200px;
@@ -131,13 +158,10 @@ if (isset($_POST['mostrar_servicios'])) {
       <div class="collapse navbar-collapse" id="navbarMenu">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" href="../php/servicios.php">Servicios</a>
+            <a class="nav-link" href="../index.html">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="">Regresa</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../php/productos.php">Promociones</a>
+            <a class="nav-link" href="../php/productos.php">Productos</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="conocenos.html">Conócenos</a>
@@ -185,6 +209,6 @@ if (isset($_POST['mostrar_servicios'])) {
           <p class="mensaje"><?= $mensaje ?></p>
       <?php endif; ?>
   </div>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

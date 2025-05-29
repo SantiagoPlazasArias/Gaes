@@ -18,6 +18,9 @@
   color: #007BFF;
 }
 
+.cajaprincipal{
+  text-align: center;
+}
 
 /* Mostrar acordeón en móviles */
 @media (max-width: 768px) {
