@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Conócenos</title>
+  <link rel="icon" href="/img/favicon.png" type="image/png">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <header id="header">
+    <script>
+        fetch('nav/nav.html')
+            .then(res => res.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+  </script>
+    </header>
+  <!-- Hero -->
+  <section class="hero" style="background-image: url('/img/conocenos.png');">
+    <div class="container">
+      <h1>Conócenos</h1>
+      <p>Descubre quiénes somos y por qué somos tu mejor opción en bienestar.</p>
+    </div>
+  </section>
+
+  <!-- Misión -->
+  <section class="services">
+    <div class="container">
+      <h2>Nuestra Misión</h2>
+      <p style="text-align: center; max-width: 800px; margin: auto;">
+        En <strong>Lotus Dream Spa</strong>, nos dedicamos a brindar experiencias únicas de relajación, cuidado personal y bienestar integral.
+        Nuestra misión es ayudarte a reconectar contigo mismo a través de terapias personalizadas en un ambiente tranquilo y acogedor.
+      </p>
+    </div>
+  </section>
+
+  <!-- Nuestro Equipo -->
+  <section class="products">
+    <div class="container">
+      <h2>Nuestro Equipo</h2>
+      <div class="product-list">
+        <div class="product-item">
+          <img src="img/empleado.png" alt="Masajista" />
+          <h3>Lucía Gómez</h3>
+          <p>Especialista en masajes terapéuticos y relajantes.</p>
+        </div>
+        <div class="product-item">
+          <img src="img/empleado.png" alt="Esteticista" />
+          <h3>Camila Rodríguez</h3>
+          <p>Esteticista experta en tratamientos faciales y cuidado de la piel.</p>
+        </div>
+        <div class="product-item">
+          <img src="img/empleado.png" alt="Manicurista" />
+          <h3>Daniela Pérez</h3>
+          <p>Manicurista profesional con enfoque en uñas saludables y diseños modernos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Instalaciones -->
+  <section class="services">
+    <div class="container">
+      <h2>Nuestras Instalaciones</h2>
+      <p style="text-align: center; max-width: 800px; margin: auto;">
+        Contamos con espacios diseñados para el confort, el descanso y la armonía. Cada rincón está pensado para que vivas una experiencia inolvidable.
+      </p>
+      <div class="service-list mt-4">
+        <div class="service-item">
+          <img src="img/cabina.png" alt="Cabina de masaje" />
+          <h3>Cabinas de Masaje</h3>
+          <p>Ambientes cálidos, silenciosos y aromatizados para tu máxima relajación.</p>
+        </div>
+        <div class="service-item">
+          <img src="img/facial.png" alt="Zona facial" />
+          <h3>Zona Facial</h3>
+          <p>Equipos de última generación para cuidar tu piel como se merece.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Pie de página -->
+          <footer id="footer">
+    <script>
+        fetch('footer/footer.html')
+            .then(res => res.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+  </script>
+    </footer>
+  
+</body>
+</html>
